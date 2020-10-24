@@ -21,10 +21,20 @@
     	margin-bottom: 0pt;
     	margin-left: 16pt;
 	}
+	ol {
+	counter-reset: list;
+	}
+	ol > li {
+	list-style: none;
+	} 
+	ol > li:before {
+	counter-increment: list;
+	content:"[" counter(list) "] ";
+}
 </style>
 <head>
 <link rel="shortcut icon" href="img/fb.png" type="image/png">
-<title>Jiecao Yu - UMich</title>
+<title>Jiecao Yu - Facebook, Inc.</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -66,7 +76,7 @@
 			<br><br>
 			If you need more information about my current work, please <a href=mailto:jiecaoyu@fb.com>Contact Me</a>.
 			<br><br>
-			My CV is available <a href=https://jiecaoyu.github.io/CV/cv_jiecaoyu.pdf>here</a> (updated 04/2020).
+			My CV is available <a href=https://jiecaoyu.github.io/CV/cv_jiecaoyu.pdf>here</a> (updated 10/2020).
 		</p>
 	</div>
 
@@ -99,43 +109,35 @@
 			Publications
 		</h2>
 
-		<!-- Conferences -->
-		<p style="margin-left:2em;margin-bottom:0em; font-size:16pt">
-			<b>Conferences</b>
-		</p>
-		<p style="margin-left:3em; font-size:14pt">
-		[1]&nbsp; <b>Jiecao Yu</b>, Andrew Lukefahr, Reetuparna Das, Scott Mahlke. <i>"TF-Net: Deploying Sub-Byte Deep Neural Networks on Microcontrollers"</i>. ESWEEK-TECS special issue / the International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (<b>CASES</b>), Oct, 2019 <br>
+		<ol style="padding:0;list-style-position:inside;margin-left:3em;font-size:14pt">
+		<li style="padding-bottom:1.5em">
+		Mao Ye, Dhruv Choudhary, <b>Jiecao Yu</b>, Ellie Wen, Zeliang Chen, Jiyan Yang, Jongsoo Park, Qiang Liu, Arun Kejariwal. <i>"Adaptive Dense-to-Sparse Paradigm for Pruning Online Recommendation System with Non-Stationary Data"</i>. arXiv: 2010.08655 <br>
+		[ <a target="_blank" href=https://arxiv.org/pdf/2010.08655.pdf>paper</a> ]
+		</li>
+		<li style="padding-bottom:1.5em">
+		<b>Jiecao Yu</b>, Andrew Lukefahr, Reetuparna Das, Scott Mahlke. <i>"TF-Net: Deploying Sub-Byte Deep Neural Networks on Microcontrollers"</i>. ESWEEK-TECS special issue / the International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (<b>CASES</b>), Oct, 2019 <br>
 		[ <a target="_blank" href=https://jiecaoyu.github.io/papers/jiecaoyu-cases19.pdf>paper</a> ] 
-		</p>
-		<p style="margin-left:3em; font-size:14pt">
-		[2]&nbsp; Xiaowei Wang, <b>Jiecao Yu</b>, Charles Augustine, Ravi Iyer, Reetuparna Das. <i>"Bit Prudent In-Cache Acceleration of Deep Convolutional Neural Networks"</i>. The 25th IEEE International Symposium on High-Performance Computer Architecture (<b>HPCA</b>-25), Feb, 2019 <br>
+		</li>
+		<li style="padding-bottom:1.5em">
+		Xiaowei Wang, <b>Jiecao Yu</b>, Charles Augustine, Ravi Iyer, Reetuparna Das. <i>"Bit Prudent In-Cache Acceleration of Deep Convolutional Neural Networks"</i>. The 25th IEEE International Symposium on High-Performance Computer Architecture (<b>HPCA</b>-25), Feb, 2019 <br>
 		[ <a target="_blank" href=https://jiecaoyu.github.io/papers/xiaowei-hpca19.pdf>paper</a> ] 
-		</p>
-		<p style="margin-left:3em; font-size:14pt">
-		[3]&nbsp; <b>Jiecao Yu</b>, Andrew Lukefahr, David Palframa, Ganesh Dasika, Reetuparna Das, Scott Mahlke. <i>"Scalpel: Customizing DNN Pruning to the Underlying Hardware Parallelism"</i>. The 44th International Symposium on Computer Architecture (<b>ISCA</b>-44), Jun, 2017 <br>
+		</li>
+		<li style="padding-bottom:1.5em">
+		<b>Jiecao Yu</b>, Jongsoo Park, Maxim Naumov. <i>"Spatial-Winograd Pruning Enabling Sparse Winograd Convolution"</i>. arXiv: 1901.02132 <br>
+		[ <a target="_blank" href=https://arxiv.org/pdf/1901.02132.pdf>paper</a> ]
+		</li>
+		<li style="padding-bottom:1.5em">
+		<b>Jiecao Yu</b>, Andrew Lukefahr, David Palframa, Ganesh Dasika, Reetuparna Das, Scott Mahlke. <i>"Scalpel: Customizing DNN Pruning to the Underlying Hardware Parallelism"</i>. The 44th International Symposium on Computer Architecture (<b>ISCA</b>-44), Jun, 2017 <br>
 		[ <a target="_blank" href=https://jiecaoyu.github.io/papers/jiecaoyu-isca17.pdf>paper</a> |
 			<a href=https://jiecaoyu.github.io/slides/jiecaoyu-isca17.pptx>slides</a> |
 			<a target='_blank' href=https://github.com/ARM-software/scalpel>code</a> ] 
-		</p>
-		
-		<!-- Preprints -->
-		<p style="margin-left:2em;margin-bottom:0em; font-size:16pt">
-			<b>Preprints</b>
-		</p>
-		<p style="margin-left:3em; font-size:14pt">
-		[4]&nbsp; <b>Jiecao Yu</b>, Jongsoo Park, Maxim Naumov. <i>"Spatial-Winograd Pruning Enabling Sparse Winograd Convolution"</i>. arXiv: 1901.02132 <br>
-		[ <a target="_blank" href=https://arxiv.org/pdf/1901.02132.pdf>paper</a> ]
-		</p>
-
-		<!-- Workshops -->
-		<p style="margin-left:2em;margin-bottom:0em; font-size:16pt">
-			<b>Workshops</b>
-		</p>
-		<p style="margin-left:3em; font-size:14pt">
-		[5]&nbsp; <b>Jiecao Yu</b>, Andrew Lukefahr, Shruti Padmanabha, Reetuparna Das, Scott Mahlke. <i>"Adaptive Cache Partitioning on a Composite Core"</i>.  The PRISM-3 Workshop at ISCA-42, Jun, 2015 <br>
+		</li>
+		<li style="padding-bottom:0.0em">
+		<b>Jiecao Yu</b>, Andrew Lukefahr, Shruti Padmanabha, Reetuparna Das, Scott Mahlke. <i>"Adaptive Cache Partitioning on a Composite Core"</i>.  The PRISM-3 Workshop at ISCA-42, Jun, 2015 <br>
 		[ <a target="_blank" href=https://jiecaoyu.github.io/papers/Cache_Partitioning_on_a_Composite_Core.pdf>paper</a> |
 			<a href=https://jiecaoyu.github.io/slides/Presentation_JiecaoYU.pptx>slides</a> ]
-		</p>
+		</li>
+		</ol>
 	</div>
 
 	<div class="section">
@@ -174,7 +176,7 @@
 			Links
 		</h2>
 		<p style="margin-left:3em; font-size:14pt">
-		<a target="_blank" href=https://scholar.google.com/citations?user=uxL6snYAAAAJ&hl=en>Google Citation</a> &nbsp; | &nbsp; <a target="_blank" href=https://www.linkedin.com/in/jiecao-yu-888ba443/>LinkedIn</a>  &nbsp; | &nbsp; <a target="_blank" href=https://github.com/jiecaoyu/reading_list/blob/master/README.md>Reading List</a>  &nbsp; | &nbsp; <a target="_blank" href=https://github.com/jiecaoyu>Github</a>
+		<a target="_blank" href=https://scholar.google.com/citations?user=uxL6snYAAAAJ&hl=en>Google Citation</a> &nbsp; | &nbsp; <a target="_blank" href=https://www.linkedin.com/in/jiecao-yu-888ba443/>LinkedIn</a>  &nbsp; | &nbsp; <a target="_blank" href=https://github.com/jiecaoyu>Github</a>
 		</p>
 	</div>
 
@@ -206,7 +208,7 @@
 	    	<!--</a>-->
 	    	<!-- hitwebcounter Code END -->
 		&emsp;
-		Last updated: Apr, 2020
+		Last updated: Oct, 2020
 		</p>
 	</div>
 </div>
