@@ -10,12 +10,12 @@
 .left {
     float: left;
     width: 315px;
- 	max-width:  30%;
+ 	max-width:  25%;
 }
 
 .right {
     float: right;
-    width: 70%;
+    width: 75%;
 }
 
 .section {
